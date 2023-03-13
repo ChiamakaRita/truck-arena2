@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavbarLink.css";
 import { Link as LinkS } from "react-scroll";
-import logo from "../../assets/images/truck_arena_logo.png";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Fab from "@mui/material/Fab";
+import logo from "../../assets/images/truck_arena_logo.png";
 
 export const NavbarLink = () => {
   const [nav, setNav] = useState(false);
@@ -31,59 +31,62 @@ export const NavbarLink = () => {
           </LinkS>
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
-          <li>
-            <LinkS
-              onClick={handleClose}
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              ABOUT US
-            </LinkS>
-          </li>
-          <li>
-            <LinkS
-              onClick={handleClose}
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              SERVICES
-            </LinkS>
-          </li>
-          <li>
-            <LinkS
-              onClick={handleClose}
-              activeClass="active"
-              to="questions"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              FQA
-            </LinkS>
-          </li>
-          <li>
-            <LinkS
-              onClick={handleNav}
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              <Fab variant="extended">
-                <PhoneIcon sx={{ mr: 1 }} />
-                Contact
-              </Fab>
-            </LinkS>
-          </li>
+          <div className="first__align">
+            <li>
+              <LinkS
+                onClick={handleClose}
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                ABOUT US
+              </LinkS>
+            </li>
+            <li>
+              <LinkS
+                onClick={handleClose}
+                activeClass="active"
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                SERVICES
+              </LinkS>
+            </li>
+            <li>
+              <LinkS
+                onClick={handleClose}
+                activeClass="active"
+                to="questions"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                FQA
+              </LinkS>
+            </li>
+          </div>
+          <div className="second__align">
+            <li>
+              <LinkS
+                onClick={handleNav}
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <Fab variant="extended">
+                  <PhoneIcon sx={{ mr: 1 }} />
+                  Contact
+                </Fab>
+              </LinkS>
+            </li>
+          </div>
         </ul>
-
         <div className="hamburger" onClick={handleNav}>
           {nav ? (
             <FaTimes size={25} style={{ color: "#000080" }} />
@@ -96,4 +99,3 @@ export const NavbarLink = () => {
   );
 };
 
-// export default NavbarLink;

@@ -1,8 +1,9 @@
 import React from 'react';
-import Image from "../../assets/images/Truck-Inspection.jpeg";
 import { FaAward } from 'react-icons/fa';
-import {AiOutlineCustomerService} from "react-icons/ai"
+import { AiOutlineCustomerService } from "react-icons/ai";
 import { Link } from 'react-scroll';
+
+import Image from "../../assets/images/Truck-Inspection.jpeg";
 
 const About = () => {
   return (
@@ -12,10 +13,9 @@ const About = () => {
       <div className="container about__container">
         <div className="about__us">
           <div className="about__us-image">
-            <img src={Image} alt="about image" />
+            <img src={Image} alt="about" />
           </div>
         </div>
-
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
@@ -42,6 +42,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;

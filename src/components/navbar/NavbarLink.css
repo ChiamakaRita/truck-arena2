@@ -12,6 +12,11 @@
     align-items: center;
     margin-right: 50px;
 }
+.first__align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar .logo {
     display: flex;
@@ -83,12 +88,20 @@
         justify-content: center;
         width: 50%;
         height: 100vh;
-        /* background: rgb(62, 59, 59); */
         background: #fff;
         top: 0;
         right: -100%;
         transition: 0.9s ease-in-out;
         
+    }
+    .first__align{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .second__align{
+        margin-top: 300px;
     }
     .nav-menu li a{
         color: rgb(230, 222, 222);
@@ -108,13 +121,13 @@
         font-size: 1.2rem;
     }
 
-    .nav-menu li:hover {
+    /* .nav-menu li:hover {
         border-bottom: 1px solid #aaa;
         width: 175px;
-    }
-    .nav-menu button:hover {
+    } */
+    /* .nav-menu button:hover {
         background: rgba(255, 255, 255, .1);
-    }
+    } */
 
    
     .nav-menu .icon {

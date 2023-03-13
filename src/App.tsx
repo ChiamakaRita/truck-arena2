@@ -14,7 +14,7 @@ function App() {
       <NavbarLink />
       <HomeSection />
       <About />
-      <Services/>
+      <Services />
       <SimpleAccordion />
       <Contact />
       <Footer />

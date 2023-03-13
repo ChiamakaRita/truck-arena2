@@ -32,6 +32,8 @@ section > h2, section > h5, section > h3{
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    margin: 2rem auto;
+    padding: 2rem 0;
 }
 .about__us{
   width: 100%;
@@ -142,6 +144,8 @@ img{
     border: 1px solid #3c3a40;
     height: fit-content;
     transition: all 400ms ease;
+    margin: 2rem auto;
+    padding: 2rem 0;
 }
 
 .service__head{
@@ -178,6 +182,8 @@ img{
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
+    margin: 2rem auto;
+    padding: 2rem 0;
 }
 .contact__options{
     display: flex;

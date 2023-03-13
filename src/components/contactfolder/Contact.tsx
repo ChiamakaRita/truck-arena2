@@ -2,8 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import "../../components/sharedStyle.css";
+import "../sharedStyle.css";
 
 const Contact = () => {
    const form = useRef<HTMLFormElement | null>(null);
@@ -17,8 +16,8 @@ const Contact = () => {
          "service_wbyqufl",
          "template_mujab0f",
          fc,
-         "wMDzF2mx2BP8YhRcT"
-       )
+         "wMDzF2mx2BP8YhRcT",
+       );
       // e.target.reset()
    };
 
@@ -33,7 +32,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>rchiamaka331@gmail.com</h5>
-            <a href="mailto:rchiamaka331@gmail.com" target="_blank">
+            <a href="mailto:rchiamaka331@gmail.com">
               Send a message
             </a>
           </article>
@@ -41,7 +40,7 @@ const Contact = () => {
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+2347083537150</h5>-
-            <a href="https://wa.me/+2347083537150" target="_blank">
+            <a href="https://wa.me/+2347083537150">
               Send a message
             </a>
           </article>
@@ -59,7 +58,8 @@ const Contact = () => {
             placeholder="your Message"
             rows={7}
             required
-          ></textarea>
+          >
+          </textarea>
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
