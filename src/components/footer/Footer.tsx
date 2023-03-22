@@ -1,10 +1,22 @@
+import React, { useState } from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { Link as LinkR } from "react-scroll";
+import { Link as LinkS } from "react-router-dom";
+import { BsFacebook } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 
 function Footer() {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+  const handleClose = () => {
+    setNav(!nav);
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -13,19 +25,46 @@ function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <Link to="/">HOME</Link>
+                <LinkR to="/home" onClick={handleClose}></LinkR>
               </li>
               <li>
-                <Link to="/about">ABOUT</Link>
+                <LinkR
+                  onClick={handleClose}
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  ABOUT
+                </LinkR>
               </li>
               <li>
-                <Link to="/services">SERVICE</Link>
+                <LinkR
+                  onClick={handleClose}
+                  activeClass="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  SERVICE
+                </LinkR>
               </li>
               <li>
-                <Link to="/question">FAQ</Link>
+                <LinkR
+                  onClick={handleClose}
+                  activeClass="active"
+                  to="questions"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  FAQ
+                </LinkR>
               </li>
               <li>
-                <Link to="/contact">CONTACT</Link>
+                <LinkR to="/contact">CONTACT</LinkR>
               </li>
             </ul>
           </div>
@@ -33,34 +72,34 @@ function Footer() {
             <h4>Services</h4>
             <ul>
               <li>
-                <Link to="/services">Tyre Management</Link>
+                <LinkS to="/services">Truck Inspection & Uptime Service</LinkS>
               </li>
               <li>
-                <Link to="/services">Truck Inspection</Link>
+                <LinkS to="/services">Truck Repair & Maintenance</LinkS>
               </li>
               <li>
-                <Link to="/services">Truck Maintenance</Link>
+                <LinkS to="/services">Tyre Management Service</LinkS>
               </li>
               <li>
-                <Link to="/services">Trainig of Truck Technician</Link>
+                <LinkS to="/services">Truck Technician Training</LinkS>
               </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <Link to="/facebook">
+              <LinkS to="/facebook">
                 <BsFacebook />
-              </Link>
-              <Link to="/twitter">
+              </LinkS>
+              <LinkS to="/twitter">
                 <FaTwitter />
-              </Link>
-              <Link to="/linkedin">
+              </LinkS>
+              <LinkS to="/linkedin">
                 <GrLinkedin />
-              </Link>
-              <Link to="/instagram">
-                <BsInstagram />
-              </Link>
+              </LinkS>
+              <LinkS to="/email">
+                <MdOutlineEmail />
+              </LinkS>
             </div>
           </div>
         </div>

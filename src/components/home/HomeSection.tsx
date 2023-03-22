@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./HomeSection.css";
-import { Link } from "react-scroll";
+import { Routes, Route, Link } from "react-router-dom";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import About from "components/aboutfolder/About";
 
 const HomeSection = () => {
   const [hover, setHover] = useState(false);
@@ -19,12 +20,15 @@ const HomeSection = () => {
         <div className="btn-container">
           <Link
             className="link"
-            to="about"
+            to="/about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
             Learn More {hover ? <MdArrowForward /> : <MdKeyboardArrowRight />}
           </Link>
+          <Routes>
+            <Route path="/about" element={<About />} />
+          </Routes>
         </div>
       </div>
     </div>

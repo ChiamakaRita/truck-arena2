@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import "../sharedStyle.css";
 
@@ -23,7 +22,6 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h3>Get In Touch</h3>
       <h2>Contact Us</h2>
 
       <div className="container contact__container">
@@ -33,14 +31,6 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>rchiamaka331@gmail.com</h5>
             <a href="mailto:rchiamaka331@gmail.com">
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>+2347083537150</h5>-
-            <a href="https://wa.me/+2347083537150">
               Send a message
             </a>
           </article>

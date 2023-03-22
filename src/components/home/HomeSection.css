@@ -16,6 +16,7 @@
     left: 0;
     z-index: -1;
     filter: brightness(50%);
+    animation: change 10s infinite ease-in-out;
 }
 
 .home .content {
