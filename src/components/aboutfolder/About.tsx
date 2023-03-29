@@ -1,4 +1,3 @@
-import { AiOutlineCustomerService } from "react-icons/ai";
 import { GiStairsGoal } from "react-icons/gi";
 import { Link } from 'react-scroll';
 
@@ -8,7 +7,6 @@ const About = () => {
   return (
     <section id="about" className="about">
       <h3>THE TRUCK ARENA AT A GLANCE</h3>
-      {/* <h2></h2> */}
       <div className="container about__container">
         <div className="about__us">
           <div className="about__us-image">
@@ -24,11 +22,6 @@ const About = () => {
                 We are on a mission to build the first ultra-modern Truck
                 Management ecosystem in Nigeria.
               </small>
-            </article>
-            <article className="about__card">
-              <AiOutlineCustomerService className="about__icon" />
-              <h5>24/7 Customer</h5>
-              <small>Services</small>
             </article>
           </div>
           <p>

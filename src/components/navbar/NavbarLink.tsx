@@ -48,7 +48,7 @@ export const NavbarLink = () => {
               <LinkS
                 onClick={handleClose}
                 activeClass="active"
-                to="services"
+                to="service"
                 spy={true}
                 smooth={true}
                 duration={500}

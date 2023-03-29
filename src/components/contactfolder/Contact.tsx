@@ -29,10 +29,8 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>rchiamaka331@gmail.com</h5>
-            <a href="mailto:rchiamaka331@gmail.com">
-              Send a message
-            </a>
+            <h5>info@thetruckarena.com</h5>
+            <a href="mailto:info@thetruckarena.com">Send a message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
@@ -48,8 +46,7 @@ const Contact = () => {
             placeholder="your Message"
             rows={7}
             required
-          >
-          </textarea>
+          ></textarea>
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>

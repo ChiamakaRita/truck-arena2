@@ -4,23 +4,20 @@ import HomeSection from "components/home/HomeSection";
 import Footer from "components/footer/Footer";
 import Contact from "components/contactfolder/Contact";
 import SimpleAccordion from "components/accordian/Accordian";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Service from "components/servicefolder2/Service";
 import About from "components/aboutfolder/About";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <NavbarLink />
       <HomeSection />
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <About />
       <Service />
       <SimpleAccordion />
       <Contact />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

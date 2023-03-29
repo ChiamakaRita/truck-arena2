@@ -25,13 +25,20 @@ function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <LinkR to="/home" onClick={handleClose}></LinkR>
+                <LinkR
+                  to="home"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  HOME
+                </LinkR>
               </li>
               <li>
                 <LinkR
-                  onClick={handleClose}
-                  activeClass="active"
                   to="about"
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -41,9 +48,8 @@ function Footer() {
               </li>
               <li>
                 <LinkR
-                  onClick={handleClose}
                   activeClass="active"
-                  to="services"
+                  to="service"
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -53,7 +59,6 @@ function Footer() {
               </li>
               <li>
                 <LinkR
-                  onClick={handleClose}
                   activeClass="active"
                   to="questions"
                   spy={true}
@@ -64,7 +69,15 @@ function Footer() {
                 </LinkR>
               </li>
               <li>
-                <LinkR to="/contact">CONTACT</LinkR>
+                <LinkR
+                  to="contact"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  CONTACT
+                </LinkR>
               </li>
             </ul>
           </div>
@@ -72,16 +85,24 @@ function Footer() {
             <h4>Services</h4>
             <ul>
               <li>
-                <LinkS to="/services">Truck Inspection & Uptime Service</LinkS>
+                <LinkR
+                  to="service"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Truck Inspection & Uptime Service
+                </LinkR>
               </li>
               <li>
-                <LinkS to="/services">Truck Repair & Maintenance</LinkS>
+                <LinkR to="service">Truck Repair & Maintenance</LinkR>
               </li>
               <li>
-                <LinkS to="/services">Tyre Management Service</LinkS>
+                <LinkR to="service">Tyre Management Service</LinkR>
               </li>
               <li>
-                <LinkS to="/services">Truck Technician Training</LinkS>
+                <LinkR to="service">Truck Technician Training</LinkR>
               </li>
             </ul>
           </div>
