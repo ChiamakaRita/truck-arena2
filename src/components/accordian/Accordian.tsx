@@ -34,11 +34,7 @@ export default function SimpleAccordion() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <Typography>Not Available</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -54,11 +50,7 @@ export default function SimpleAccordion() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <Typography>Not Available</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -74,11 +66,7 @@ export default function SimpleAccordion() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <Typography>Not Available</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -94,11 +82,7 @@ export default function SimpleAccordion() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <Typography>Not Available</Typography>
             </AccordionDetails>
           </Accordion>
         </Container>

@@ -121,62 +121,12 @@ img{
     margin: 0 auto 1rem;
     border: 0.4rem solid #2E2252;
 }
-/* .service{
-    background: rgb(239, 239, 244);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
-} */
 .service__description{
     color: #827b7b;
     font-weight: 300;
     display: block;
     width: 80%;
     margin: 0.8rem auto 0;
-}
-/* Services2 Styles */
-.services__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-}
-.services{
-    background: #112047;
-    border-radius: 0 0 2rem 2rem;
-    border: 1px solid #3c3a40;
-    height: fit-content;
-    transition: all 400ms ease;
-    margin: 2rem auto;
-    padding: 2rem 0;
-}
-
-.service__head{
-    background: #827b7b;
-    padding: 2rem;
-    border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-}
-.service__head h3{
-    color: #ccc;
-    font-size: 1rem;
-    text-align: center;
-}
-.service__list{
-    padding: 2rem;
-}
-.service__list li{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
-}
-.service__list-icon{
-    color: #9f9c9c;
-    margin-top: 2px;
-}
-.service__list p{
-    font-size: 0.9rem;
-    color: #f7e6e6;
 }
 
 /* Contact Styles */

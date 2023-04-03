@@ -8,7 +8,7 @@
     max-width: 80%;
     text-align: center;
     margin: 3rem auto;
-    width: 900px;
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -88,20 +88,4 @@ h3{
 }
 .service_card:hover{
     box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
-}
-
-.label{
-    display: inline-block;
-    margin-top: 15px;
-    color: #d8dadd;
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 600;
-}
-@media screen and (max-width: 1024px) {
-    .service-container{
-        width: 60%;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import { Link as LinkR } from "react-scroll";
-import { Link as LinkS } from "react-router-dom";
+import { Link as Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa";
@@ -25,59 +24,25 @@ function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <LinkR
-                  to="home"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  HOME
-                </LinkR>
-              </li>
-              <li>
-                <LinkR
+                <Link
                   to="about"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
                 >
                   ABOUT
-                </LinkR>
+                </Link>
               </li>
               <li>
-                <LinkR
-                  activeClass="active"
-                  to="service"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                <Link
+                  to="services"
                 >
                   SERVICE
-                </LinkR>
+                </Link>
               </li>
               <li>
-                <LinkR
-                  activeClass="active"
-                  to="questions"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  FAQ
-                </LinkR>
-              </li>
-              <li>
-                <LinkR
+                <Link
                   to="contact"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
                 >
                   CONTACT
-                </LinkR>
+                </Link>
               </li>
             </ul>
           </div>
@@ -85,42 +50,38 @@ function Footer() {
             <h4>Services</h4>
             <ul>
               <li>
-                <LinkR
-                  to="service"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                <Link
+                  to="services"
                 >
                   Truck Inspection & Uptime Service
-                </LinkR>
+                </Link>
               </li>
               <li>
-                <LinkR to="service">Truck Repair & Maintenance</LinkR>
+                <Link to="service">Truck Repair & Maintenance</Link>
               </li>
               <li>
-                <LinkR to="service">Tyre Management Service</LinkR>
+                <Link to="service">Tyre Management Service</Link>
               </li>
               <li>
-                <LinkR to="service">Truck Technician Training</LinkR>
+                <Link to="service">Truck Technician Training</Link>
               </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <LinkS to="/facebook">
+              <Link to="/facebook">
                 <BsFacebook />
-              </LinkS>
-              <LinkS to="/twitter">
+              </Link>
+              <Link to="/twitter">
                 <FaTwitter />
-              </LinkS>
-              <LinkS to="/linkedin">
+              </Link>
+              <Link to="/linkedin">
                 <GrLinkedin />
-              </LinkS>
-              <LinkS to="/email">
+              </Link>
+              <Link to="/email">
                 <MdOutlineEmail />
-              </LinkS>
+              </Link>
             </div>
           </div>
         </div>

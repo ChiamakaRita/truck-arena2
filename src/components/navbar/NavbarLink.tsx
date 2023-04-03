@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavbarLink.css";
-import { Link as LinkS } from "react-scroll";
+// import { Link as LinkR } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Fab from "@mui/material/Fab";
 import logo from "../../assets/images/truck_arena_logo.png";
@@ -21,69 +22,47 @@ export const NavbarLink = () => {
     <div className="navbar">
       <div className="container1">
         <div>
-          <LinkS to="home" onClick={handleClose} className="logo">
+          <LinkR to="home" onClick={handleClose} className="logo">
             <img
               src={logo}
               alt="Truck Arena logo"
               width={60}
               className="image"
             />
-          </LinkS>
+          </LinkR>
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <div className="first__align">
             <li>
-              <LinkS
+              <LinkR
                 onClick={handleClose}
-                activeClass="active"
                 to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
+               
               >
                 ABOUT US
-              </LinkS>
+              </LinkR>
             </li>
             <li>
-              <LinkS
+              <LinkR
                 onClick={handleClose}
-                activeClass="active"
-                to="service"
-                spy={true}
-                smooth={true}
-                duration={500}
+                to="services"
               >
                 SERVICES
-              </LinkS>
-            </li>
-            <li>
-              <LinkS
-                onClick={handleClose}
-                activeClass="active"
-                to="questions"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                FQA
-              </LinkS>
+              </LinkR>
             </li>
           </div>
           <div className="second__align">
             <li>
-              <LinkS
+              <LinkR
                 onClick={handleNav}
-                activeClass="active"
                 to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
+                
               >
                 <Fab variant="extended">
                   <PhoneIcon sx={{ mr: 1 }} />
                   Contact
                 </Fab>
-              </LinkS>
+              </LinkR>
             </li>
           </div>
         </ul>

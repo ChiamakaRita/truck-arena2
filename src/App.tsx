@@ -1,24 +1,21 @@
 import "./App.css";
-import { NavbarLink } from "components/navbar/NavbarLink";
+import { observer } from 'mobx-react-lite';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeSection from "components/home/HomeSection";
-import Footer from "components/footer/Footer";
-import Contact from "components/contactfolder/Contact";
-import SimpleAccordion from "components/accordian/Accordian";
-import Service from "components/servicefolder2/Service";
-import About from "components/aboutfolder/About";
+import AboutPage from "pages/AboutPage";
+import ContactPage from "pages/ContactPage";
+import ServiceComponent from "components/hiddenService/ServiceComponent";
 
-function App() {
+export default observer(function App() {
   return (
-    <>
-      <NavbarLink />
-      <HomeSection />
-      <About />
-      <Service />
-      <SimpleAccordion />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+        <Routes>
+          <Route index element={<HomeSection />} />
+          <Route path="/home" element={<HomeSection />} />
+          <Route path="/about" element={< AboutPage />} />
+          <Route path="/services" element={<ServiceComponent />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+    </BrowserRouter>
   );
-}
-
-export default App;
+})
