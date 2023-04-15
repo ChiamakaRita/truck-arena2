@@ -1,5 +1,4 @@
 import HomeSection from 'components/home/HomeSection';
-import ServicePage from './ServicePage';
 
 const HomePage = () => {
   return (

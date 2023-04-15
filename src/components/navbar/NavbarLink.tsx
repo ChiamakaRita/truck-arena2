@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavbarLink.css";
-// import { Link as LinkR } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Fab from "@mui/material/Fab";
@@ -22,7 +21,7 @@ export const NavbarLink = () => {
     <div className="navbar">
       <div className="container1">
         <div>
-          <LinkR to="home" onClick={handleClose} className="logo">
+          <LinkR to="/" onClick={handleClose} className="logo">
             <img
               src={logo}
               alt="Truck Arena logo"
@@ -34,30 +33,19 @@ export const NavbarLink = () => {
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <div className="first__align">
             <li>
-              <LinkR
-                onClick={handleClose}
-                to="about"
-               
-              >
+              <LinkR onClick={handleClose} to="/about">
                 ABOUT US
               </LinkR>
             </li>
             <li>
-              <LinkR
-                onClick={handleClose}
-                to="services"
-              >
+              <LinkR onClick={handleClose} to="/services">
                 SERVICES
               </LinkR>
             </li>
           </div>
           <div className="second__align">
             <li>
-              <LinkR
-                onClick={handleNav}
-                to="contact"
-                
-              >
+              <LinkR onClick={handleNav} to="/contact">
                 <Fab variant="extended">
                   <PhoneIcon sx={{ mr: 1 }} />
                   Contact
@@ -77,4 +65,3 @@ export const NavbarLink = () => {
     </div>
   );
 };
-

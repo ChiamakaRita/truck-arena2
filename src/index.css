@@ -22,6 +22,260 @@ body{
   position: absolute;
   top: 0;
 } 
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+section{
+    margin-top: 8rem;
+}
+section > h2, section > h5, section > h3{
+    text-align: center;
+    color: var();
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: #bb0509;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #112047;
+    transition: all 400ms ease;
+}
+.btn:hover{
+    background-color: #112047;
+    color: rgb(229, 239, 239);
+    border-color: transparent;
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    z-index: -1;
+}
+.about__us{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+  background-color: rgb(69, 79, 79);
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.about__us-image{
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: all 400ms ease;
+  height: 419px;
+}
+.about__us-image:hover{
+    transform: rotate(0);
+}
+
+.about__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.about__card{
+    background: #112047;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    transition: all 400ms ease;
+}
+.about__card small{
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.about__card:hover{
+    background: transparent;
+    border-color: #112047;
+    color: #000;
+    cursor: default;
+}
+
+.about__icon{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about__card h5{
+    font-size: 0.95rem;
+}
+.about__content p{
+  margin: 2rem 0 2.6rem;
+  color: #827b7b;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+/* Service styling */
+.container.service__container{
+    width: 40%;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+.service__avater{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid #2E2252;
+}
+.service__description{
+    color: #827b7b;
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+/* Contact Styles */
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact__option{
+    background: #112047;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.contact__option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* contact form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid rgb(51, 50, 50);
+    resize: none;
+    color: #0b0b0b;
+}
+
+/* //////////////////////////////////////////////////////// */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 86%;
+    }
+    section{
+        margin-top: 6rem;
+    }
+    .about__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about__us{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .about__content p{
+        margin: 1rem 0 1.5rem;
+    }
+    .container.service__container{
+        width: 60%;
+    }
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .services__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .services{
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+    section > h2{
+        margin-bottom: 2rem;
+    }
+    .about__us{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .about__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__content{
+        text-align: center;
+    }
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+    .container.service__container{
+        width: 90%;
+    }
+    .service__description{
+        width: 90%;
+    }
+    .container.contact__container{
+        width: 90%;
+    }
+    .services__container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
 @keyframes change{
     0%
     {

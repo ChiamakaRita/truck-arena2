@@ -23,8 +23,8 @@ const HomeSection = () => {
           <p>REPAIR SERVICES</p>
           <div className="btn-container">
             <Link
-              className="link"
               to="/about"
+              className="link"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
             >

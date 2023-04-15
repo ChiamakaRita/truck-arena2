@@ -24,25 +24,13 @@ function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <Link
-                  to="about"
-                >
-                  ABOUT
-                </Link>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li>
-                <Link
-                  to="services"
-                >
-                  SERVICE
-                </Link>
+                <Link to="/services">SERVICE</Link>
               </li>
               <li>
-                <Link
-                  to="contact"
-                >
-                  CONTACT
-                </Link>
+                <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
           </div>
@@ -50,20 +38,16 @@ function Footer() {
             <h4>Services</h4>
             <ul>
               <li>
-                <Link
-                  to="services"
-                >
-                  Truck Inspection & Uptime Service
-                </Link>
+                <Link to="/services">Truck Inspection & Uptime Service</Link>
               </li>
               <li>
-                <Link to="service">Truck Repair & Maintenance</Link>
+                <Link to="/services">Truck Repair & Maintenance</Link>
               </li>
               <li>
-                <Link to="service">Tyre Management Service</Link>
+                <Link to="/services">Tyre Management Service</Link>
               </li>
               <li>
-                <Link to="service">Truck Technician Training</Link>
+                <Link to="/services">Truck Technician Training</Link>
               </li>
             </ul>
           </div>
@@ -79,7 +63,7 @@ function Footer() {
               <Link to="/linkedin">
                 <GrLinkedin />
               </Link>
-              <Link to="/email">
+              <Link to="mailto:info@thetruckarena.com">
                 <MdOutlineEmail />
               </Link>
             </div>

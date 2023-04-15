@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { MdOutlineEmail } from "react-icons/md";
-import "../sharedStyle.css";
 import { NavbarLink } from "components/navbar/NavbarLink";
 import Footer from "components/footer/Footer";
 
