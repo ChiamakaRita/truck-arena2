@@ -276,6 +276,10 @@ input, textarea{
         gap: 1.5rem;
     }
 }
+@media screen and (max-width: 600px){
+
+}
+
 @keyframes change{
     0%
     {

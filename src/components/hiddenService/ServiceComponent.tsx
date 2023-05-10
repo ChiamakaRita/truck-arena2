@@ -11,7 +11,7 @@ const ServiceComponent = () => {
     <>
     <NavbarLink />
       <div className="services">
-        <div className="container service">
+        <div className="container">
           <h3>OUR SERVICE OFFERINGS</h3>
           <p className="service-p">
             The Truck Arena has a wide range of truck service management

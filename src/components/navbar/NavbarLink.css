@@ -138,6 +138,7 @@
         transition: .8s ease-in-out;
     }
 }
+
 @media screen and (max-width: 495px) {
     .nav-menu {
         width: 75%;

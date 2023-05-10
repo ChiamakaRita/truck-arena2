@@ -8,7 +8,7 @@ import Tyre from "../../assets/images/tyre-mgnt.jpg";
 const Service = () => {
   return (
     <div className="service">
-      <div className="container service">
+      <div className="container">
         <h3>OUR SERVICE OFFERINGS</h3>
         <p className="service-p">
           The Truck Arena has a wide range of truck service management offerings
@@ -19,7 +19,7 @@ const Service = () => {
         </p>
         <div className="service-container">
           <div className="service_card">
-            <div className="image-box">
+            <div className="image-box box1">
               <img src={Technician} alt="" />
             </div>
             <div className="service-content">
@@ -29,11 +29,13 @@ const Service = () => {
                 deliver bespoke service to fleet owners who want scheduled...
               </p>
 
-              <Link to="services" className="label">Read More</Link>
+              <Link to="services" className="label">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="service_card">
-            <div className="image-box">
+            <div className="image-box box2">
               <img src={Truck} alt="" />
             </div>
             <div className="service-content">
@@ -42,7 +44,9 @@ const Service = () => {
                 Our Truck Repair & Maintenance (TRM) service is designed to
                 deliver scheduled inspection and...
               </p>
-              <Link to="services" className="label">Read More</Link>
+              <Link to="services" className="label">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="service_card">
@@ -55,7 +59,9 @@ const Service = () => {
                 We implement practical Tyre management solution with a global
                 view, using Digital Tyre inspection Solution...
               </p>
-              <Link to="services" className="label">Read More</Link>
+              <Link to="services" className="label">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="service_card">
@@ -68,7 +74,9 @@ const Service = () => {
                 We offer instructor led and hands-on training of technicians.
                 The objective of the training is ...
               </p>
-              <Link to="services" className="label">Read More</Link>
+              <Link to="services" className="label">
+                Read More
+              </Link>
             </div>
           </div>
         </div>
